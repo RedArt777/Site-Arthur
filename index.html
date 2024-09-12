@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style>
+        * {margin:0; padding: 0; scroll-behavior: smooth;}
+        header{
+            background-color: #296bc2;
+            height: 207px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        h1{color: white; font-size: 55px;}
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ccc;
+            height: 51px;
+        }
+        ul li{
+            display: inline;
+            margin: 0 37px;
+        }
+        ul li a{
+            color:#000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        ul li a:hover{
+            font-size: 22px;
+            color:#296bc2;
+            transition: 1s;
+        }
+        #conteudo{
+            display: flex;
+            flex-direction: row;
+            padding: 40px;
+        }
+        main{
+            width: 60%;
+        }
+        main h4{
+            font-size: 28px;
+            margin-left: 16px;
+
+        }
+        aside{
+            width: 20%;
+            margin-left: 48px;
+        }
+        aside h4{
+            font-size: 28px;
+            margin-left: 16px;
+        }
+        aside section span{
+            text-align: right;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+        }
+        section h3{
+            font-size: 22px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        section img{
+            width: 100%;
+        }
+        section span{
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        footer{
+            background-color: #D9D9D9;
+            height: 268px;
+        }
+        #topo{
+            background-color: #296bc2;
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+            position: fixed;
+            right: 22px;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+        div a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Desenvolvimento Web</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Inscrições</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+    <div id="conteudo">
+    <main>
+        <h4>Desenvolvimento Web </h4>
+        <section>
+            <h3>Crie aplicações web com PHP e MySQL</h3>
+            <img width="325" src="images/PHP-MySQL.png" alt="PHP-MySql">
+            <span>Sobre o Curso</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut unde corrupti, officia, delectus
+                aliquam eligendi explicabo temporibus accusamus provident blanditiis, debitis maxime! Fugit velit sunt
+                dolorum, libero possimus quae.</p>
+        </section>
+        <section>
+            <h3>Construindo seu primeiro app com react native</h3>
+            <img width="325" src="images/React-Native.png" alt="React-Native">
+            <span>Sobre o Curso</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident voluptates quasi ratione illo, enim doloribus delectus iure fugiat suscipit perferendis, magni magnam cumque, odit error nam. Sit, tenetur necessitatibus.</p>
+        </section>
+    </main>
+    <aside>
+        <h4>Posts em Destaque</h4>
+        <section>
+            <img style="width: 100%;" src="images/PHP-MySQL.png" alt="PHP-MySql">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut unde corrupti, officia, delectus
+                aliquam eligendi explicabo temporibus accusamus provident blanditiis, debitis maxime! Fugit velit sunt
+                dolorum, libero possimus quae.</p>
+            <span>Leia Mais</span>
+        </section>
+        <section>
+            <img style="width: 100%;" src="images/React-Native.png" alt="React-Native">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident voluptates quasi ratione illo, enim doloribus delectus iure fugiat suscipit perferendis, magni magnam cumque, odit error nam. Sit, tenetur necessitatibus.</p>
+        <span>Leia Mais</span>
+        </section>
+        <h4>Ultimas Notícias</h4>
+        <section>
+            <h3>Alunos da EEEPGAL são destaques na OBI</h3>
+            <img style="width: 100%;" src="images/alunos-ep.jpg" alt="ALunos-EP">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut unde corrupti, officia, delectus
+                aliquam eligendi explicabo temporibus accusamus provident blanditiis, debitis maxime! Fugit velit sunt
+                dolorum, libero possimus quae.</p>
+            <span>Leia Mais</span>
+        </section>
+    </aside>
+    </div>
+    <footer>
+        <div>2024 - Site desenvolvido por <a href="#">Celso Russomano</a></div>
+    </footer>
+    <div id="topo"><a href="#header">Topo</a><div>
+</body>
+</html>
